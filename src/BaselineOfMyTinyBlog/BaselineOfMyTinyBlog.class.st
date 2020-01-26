@@ -9,9 +9,30 @@ BaselineOfMyTinyBlog >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
-		do: [ "Packages"
+		do: [ spec postLoadDoIt: #postload:package:.
+			self bootstrapMagritte: spec.
+			self voyage: spec.
 			spec
-				package: 'MyTinyBlog';
-				package: 'MyTinyBlog-Component' with: [ spec requires: #('Counter') ];
-				package: 'MyTinyBlog-Tests' with: [ spec requires: #('Counter') ] ]
+				package: 'MyTinyBlog'
+				with: [ spec requires: #('BootstrapMagritte' 'Voyage') ] ]
+]
+
+{ #category : #baselines }
+BaselineOfMyTinyBlog >> bootstrapMagritte: spec [
+spec
+	project: 'BootstrapMagritte'
+	with: [ spec
+		className: #ConfigurationOfBootstrapMagritte;
+		versionString: #'stable';
+		repository: 'http://smalltalkhub.com/mc/TorstenBergmann/BootstrapMagritte/main/' ]
+]
+
+{ #category : #baselines }
+BaselineOfMyTinyBlog >> voyage: spec [
+	spec 
+		baseline: 'Voyage'
+		with: [ 
+			spec
+			loads: #('mongo tests' 'memory tests');
+			repository: 'github://pharo-nosql/voyage/mc' ]
 ]
