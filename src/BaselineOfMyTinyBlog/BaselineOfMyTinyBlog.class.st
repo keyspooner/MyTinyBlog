@@ -12,9 +12,10 @@ BaselineOfMyTinyBlog >> baseline: spec [
 		do: [
 			self bootstrapMagritte: spec.
 			self voyage: spec.
+			self seaside: spec.
 			spec
 				package: 'MyTinyBlog'
-				with: [ spec requires: #('BootstrapMagritte' 'Voyage') ] ]
+				with: [ spec requires: #('BootstrapMagritte' 'Voyage' 'Seaside3') ] ]
 ]
 
 { #category : #baselines }
@@ -30,6 +31,14 @@ spec
 { #category : #baselines }
 BaselineOfMyTinyBlog >> projectClass [
 	^ MetacelloCypressBaselineProject
+]
+
+{ #category : #baselines }
+BaselineOfMyTinyBlog >> seaside: spec [
+	spec 
+		baseline: 'Seaside3'
+		with: [ spec 
+						repository: 'github://SeasideSt/Seaside:master/repository' ]
 ]
 
 { #category : #baselines }
