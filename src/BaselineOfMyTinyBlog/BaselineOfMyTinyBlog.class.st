@@ -14,7 +14,6 @@ BaselineOfMyTinyBlog >> baseline: spec [
 			self voyage: spec.
 			self seaside: spec.
 			spec
-				package: 'Seaside3' with: [ spec requires: #('BootstrapMagritte') ];
 				package: 'MyTinyBlog'
 				with: [ spec requires: #('BootstrapMagritte' 'Voyage' 'Seaside3') ] ]
 ]
@@ -27,11 +26,6 @@ spec
 		className: #ConfigurationOfBootstrapMagritte;
 		versionString: #'stable';
 		repository: 'http://smalltalkhub.com/mc/TorstenBergmann/BootstrapMagritte/main/' ]
-]
-
-{ #category : #baselines }
-BaselineOfMyTinyBlog >> projectClass [
-	^ MetacelloCypressBaselineProject
 ]
 
 { #category : #baselines }
