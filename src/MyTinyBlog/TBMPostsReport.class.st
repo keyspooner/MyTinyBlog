@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'blog'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #'as yet unclassified' }

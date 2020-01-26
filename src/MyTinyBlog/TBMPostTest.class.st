@@ -1,7 +1,7 @@
 Class {
 	#name : #TBMPostTest,
 	#superclass : #TestCase,
-	#category : #'MyTinyBlog-Tests'
+	#category : #MyTinyBlog
 }
 
 { #category : #tests }

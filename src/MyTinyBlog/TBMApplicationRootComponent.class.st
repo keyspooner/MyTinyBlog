@@ -19,7 +19,7 @@ Class {
 	#instVars : [
 		'main'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #'class initialization' }

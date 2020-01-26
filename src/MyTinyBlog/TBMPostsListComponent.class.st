@@ -9,7 +9,7 @@ Class {
 		'currentCategory',
 		'showLoginError'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #'as yet unclassified' }

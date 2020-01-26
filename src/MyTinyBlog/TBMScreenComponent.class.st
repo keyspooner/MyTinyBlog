@@ -12,7 +12,7 @@ Class {
 	#instVars : [
 		'header'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #accessing }

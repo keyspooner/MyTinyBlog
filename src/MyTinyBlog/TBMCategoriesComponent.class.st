@@ -8,7 +8,7 @@ Class {
 		'categories',
 		'postsList'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #'instance creation' }

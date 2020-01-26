@@ -4,7 +4,7 @@ I'm a simple component to manage a header associated to the TBMAdminComponent
 Class {
 	#name : #TBMAdminHeaderComponent,
 	#superclass : #TBMHeaderComponent,
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #'as yet unclassified' }

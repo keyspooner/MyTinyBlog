@@ -9,7 +9,7 @@ Class {
 		'account',
 		'component'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #initialize }

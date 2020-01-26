@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'post'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #accessing }

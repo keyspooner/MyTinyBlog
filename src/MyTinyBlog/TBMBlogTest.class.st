@@ -6,7 +6,7 @@ Class {
 		'post',
 		'first'
 	],
-	#category : #'MyTinyBlog-Tests'
+	#category : #MyTinyBlog
 }
 
 { #category : #running }

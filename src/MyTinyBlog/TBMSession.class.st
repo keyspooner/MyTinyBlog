@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'currentAdmin'
 	],
-	#category : #'MyTinyBlog-Component'
+	#category : #MyTinyBlog
 }
 
 { #category : #accessing }
