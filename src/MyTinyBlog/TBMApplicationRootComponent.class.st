@@ -31,7 +31,7 @@ TBMApplicationRootComponent class >> canBeRoot [
 TBMApplicationRootComponent class >> initialize [
 	"self initialize"
 	| app |
-	app := WAAdmin register: self asApplicationAt: 'MyTinyBlog'.
+	app := WAAdmin register: self asApplicationAt: 'tinyblog'.
 	app
 		preferenceAt: #sessionClass put: TBMSession.
 	app
