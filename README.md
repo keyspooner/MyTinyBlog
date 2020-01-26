@@ -6,7 +6,7 @@ Load project by running the below in Pharo's playground:
 ```smalltalk
 Metacello new
    baseline: 'MyTinyBlog';
-   repository: 'github://keyspooner/MyTinyBlog';
+   repository: 'github://keyspooner/MyTinyBlog/src';
    onWarning: [ :ex | ];
    onConflict: [ :ex | ex useIncoming ];
    onUpgrade: [ :ex |  ex useIncoming ];
