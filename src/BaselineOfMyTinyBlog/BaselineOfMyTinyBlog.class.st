@@ -14,6 +14,7 @@ BaselineOfMyTinyBlog >> baseline: spec [
 			self voyage: spec.
 			self seaside: spec.
 			spec
+				package: 'Seaside3' with: [ spec requires: #('BootstrapMagritte') ];
 				package: 'MyTinyBlog'
 				with: [ spec requires: #('BootstrapMagritte' 'Voyage' 'Seaside3') ] ]
 ]
