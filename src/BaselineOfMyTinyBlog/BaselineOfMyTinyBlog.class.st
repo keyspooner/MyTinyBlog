@@ -28,6 +28,11 @@ spec
 ]
 
 { #category : #baselines }
+BaselineOfMyTinyBlog >> projectClass [
+	^ MetacelloCypressBaselineProject
+]
+
+{ #category : #baselines }
 BaselineOfMyTinyBlog >> voyage: spec [
 	spec 
 		baseline: 'Voyage'
