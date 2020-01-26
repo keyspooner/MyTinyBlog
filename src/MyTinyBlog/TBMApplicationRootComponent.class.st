@@ -35,7 +35,7 @@ TBMApplicationRootComponent class >> initialize [
 	app
 		preferenceAt: #sessionClass put: TBMSession.
 	app
-		addLibrary: JQ2DeploymentLibrary;
+		addLibrary: JQDeploymentLibrary;
 		addLibrary: JQUiDeploymentLibrary;
 		addLibrary: TBSDeploymentLibrary
 ]
