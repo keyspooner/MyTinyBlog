@@ -9,7 +9,7 @@ BaselineOfMyTinyBlog >> baseline: spec [
 	<baseline>
 	spec
 		for: #common
-		do: [ spec postLoadDoIt: #postload:package:.
+		do: [
 			self bootstrapMagritte: spec.
 			self voyage: spec.
 			spec
